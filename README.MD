@@ -44,20 +44,20 @@ public class TrabalhoFelipe {
 
 #### State
 
-- No pacote TrabalhoFelipe.State é o pattern State que mostra o personagem cansado ou normal.
+- No pacote TrabalhoFelipe.State é o pattern State que mostra o personagem cansado ou normal. Esse pattern é ultilizado pois o personagem muda seu estado em tempo real de execução.
 
 #### Strategy
 
-- No pacote TrabalhoFelipe.Strategy é o pattern Strategy que faz a ação do lugar que o personagem está no momento, fazendo ele Voar, Andar, Nadar.
+- No pacote TrabalhoFelipe.Strategy é o pattern Strategy que faz a ação do lugar que o personagem está no momento, fazendo ele Voar, Andar, Nadar. Esse pattern foi ultilizado com a intensão de que o personagem altere sua forma de movimentar em tempo real de execução.
 
 #### Observer
 
-- No pacote TrabalhoFelipe.Observer é o pattern Observer que faz a notificação quando a vida do personagem está a baixo de 20.
+- No pacote TrabalhoFelipe.Observer é o pattern Observer que faz a notificação quando o personagem colide com algum mostro. Esse pattern é ultilizado para que não tenha que ser notificado o tempo todo que você não está colidindo, apenas será notificado quando colidir.
 
 #### Factory
 
-- No pacote TrabalhoFelipe.Factory é o pattern Factory Method que faz a regra de negocio que verifica o ESTADO que o personagem se encontra. O personagem que está a mais de 15 segundos se movimentando ele irá ficar cansado, caso contrario ele está se movimentando normalmente. E mesma essa classe verifica o LOCAL que o personagem está andando podendo ser "agua", "ar", "terra".
+- No pacote TrabalhoFelipe.Factory é o pattern Factory Method que faz a regra de negocio que verifica o ESTADO que o personagem se encontra. O personagem que está a mais de 15 segundos se movimentando ele irá ficar cansado, caso contrario ele está se movimentando normalmente. E a factory verifica o LOCAL que o personagem está andando podendo ser "agua", "ar", "terra". Esse pattern foi ultilizado para que possa fazer a junção de dois pattern em apenas um facilitando a chamada deles na hora da execução.
 
 #### Builder
 
-- No pacote TrabalhoFelipe.Builder é o pattern Builder. Ele faz com que outros patterns sejam obrigatorios assim facilitando sua identificação na criação do objeto.
+- No pacote TrabalhoFelipe.Builder é o pattern Builder. Ele faz com que outros patterns sejam obrigatorios assim facilitando sua identificação na criação do objeto. Esse pattern foi ultilizado para ajudar na hora da construção da nova classe Personagem na main, pois assim podemos agilizar o processo. Em vez de estar acessando a Personagem, primeiro acessamos a PersonagemBuilder e construimos os metodos que estão na Personagem.
