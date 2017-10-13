@@ -25,7 +25,7 @@ $ git clone <LINK DO REPOSITÓRIO>
 
 - No pacote TrabalhoFelipe tem a classe Personagem que faz composição com as interfaces Estado, FormaMovimento, Observador. Nessa mesma classe podemos contar com vários metodos aonde faz a ligação com os demais pacotes.
 
-- No mesmo pacote TrabalhoFelipe tem a classe TrabalhoFelipe aonde contem nossa MAIN e faz a execução de todo o projeto. Sua visualização é melhor graças ao pattern Builder
+- No mesmo pacote TrabalhoFelipe tem a classe TrabalhoFelipe aonde contem nossa MAIN e faz a execução de todo o projeto. Sua visualização é melhor graças a Interface Fluente.
 ```bash
 public class TrabalhoFelipe {
     public static void main(String[] args) {
