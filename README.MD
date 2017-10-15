@@ -52,7 +52,7 @@ public class TrabalhoFelipe {
 
 #### Observer
 
-- No pacote TrabalhoFelipe.Observer é o pattern Observer que faz a notificação quando o personagem colide com algum mostro. Esse pattern é ultilizado para que não tenha que ser notificado o tempo todo que você não está colidindo, apenas será notificado quando colidir.
+- No pacote TrabalhoFelipe.Observer é o pattern Observer que faz a notificação quando o personagem colide com algum mostro. Esse pattern é ultilizado para que o jogo não tenha que ficar notificando o tempo todo que o personagem não está colidindo, apenas será notificado quando colidir.
 
 #### Factory
 
