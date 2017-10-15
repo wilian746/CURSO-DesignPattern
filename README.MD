@@ -17,7 +17,7 @@ $ git clone <LINK DO REPOSITÓRIO>
 
 ## O PROJETO
 
-- Este projeto é sobre um personagem que constantemente tem que olhar o terreno que ele está MOVIMENTANDO e olhar sua stamina para não ficar CANSADO e sempre está de olho nas notificações de sua VIDA
+- Este projeto é sobre um personagem que constantemente tem que olhar o ambiente que ele está para mudar sua forma de movimentar. Sua stamina depois de algum tempo andando acaba, assim ele ficará cansado. Ele sempre deve ficar de olho nas notificações, pois se ele colidir com algum bicho/inimigo ele receberá uma notificação. Boa sorte!
 
 ## COMPOSIÇÃO DO PROJETO
 
@@ -34,10 +34,8 @@ public class TrabalhoFelipe {
         MarioGordoBros = new PersonagemBuilder()
                 .estaAndandoNa("terra")
                 .por(15)
-                .pontosDeVida(19)
+                .colidiuCom("cogumelo")
                 .build();
-
-        System.out.println(MarioGordoBros);
     }
 }
 ```
